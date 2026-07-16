@@ -1,25 +1,31 @@
+import QuickActionCard from "./QuickActionCard";
 
 function QuickActions() {
-  const actions = [
-    "🤖 FarmBot AI",
-    "🛒 Marketplace",
-    "👥 Communities",
-    "🏢 Companies",
-    "🚜 Equipment",
-    "📈 Market Prices",
-    "💰 Investors",
-    "🌍 Trade",
-  ];
-
   return (
-    <section className="quick-actions">
-      <h2>Quick Actions</h2>
+    <section style={{ padding: "20px" }}>
+      <QuickActionCard
+        icon="🤖"
+        title="FarmBot AI"
+        subtitle="Your smart farming assistant (Coming Soon)"
+      />
 
-      <div className="quick-grid">
-        {actions.map((item) => (
-          <button key={item}>{item}</button>
-        ))}
-      </div>
+      <QuickActionCard
+        icon="🛒"
+        title="Marketplace"
+        subtitle="Buy and sell agricultural products."
+      />
+
+      <QuickActionCard
+        icon="👥"
+        title="Communities"
+        subtitle="Join farming communities worldwide."
+      />
+
+      <QuickActionCard
+        icon="🏢"
+        title="Companies"
+        subtitle="Connect with agribusiness companies."
+      />
     </section>
   );
 }
