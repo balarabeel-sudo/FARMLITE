@@ -1,3 +1,4 @@
+import BottomNavigation from "../components/BottomNavigation";
 import MainLayout from "../components/MainLayout";
 import Navbar from "../components/Navbar";
 import HeroSection from "../components/HeroSection";
