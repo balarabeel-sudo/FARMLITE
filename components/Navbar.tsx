@@ -2,20 +2,32 @@ function Navbar() {
   return (
     <header
       style={{
-        background: "#0B6B3A",
-        color: "white",
-        padding: "15px 20px",
         display: "flex",
         justifyContent: "space-between",
         alignItems: "center",
+        padding: "16px 20px",
+        backgroundColor: "#0F7A3D",
+        color: "#fff",
+        position: "sticky",
+        top: 0,
+        zIndex: 1000,
       }}
     >
-      <h2>🌱 FarmLite</h2>
+      <div>
+        <h2 style={{ margin: 0 }}>🌱 FarmLite</h2>
+        <small>Grow Together</small>
+      </div>
 
-      <div style={{ display: "flex", gap: "15px", fontSize: "20px" }}>
+      <div
+        style={{
+          display: "flex",
+          gap: "18px",
+          fontSize: "22px",
+        }}
+      >
         <span>🔍</span>
-        <span>💬</span>
         <span>🔔</span>
+        <span>💬</span>
         <span>👤</span>
       </div>
     </header>
