@@ -1,26 +1,43 @@
-const HeroSection = () => {
+function HeroSection() {
   return (
-    <section className="bg-green-700 text-white rounded-3xl p-8 mx-4 mt-6">
-      <h1 className="text-4xl font-bold leading-tight">
-        Welcome to Farmlite
+    <section
+      style={{
+        background: "#0F7A3D",
+        color: "white",
+        padding: "40px 20px",
+      }}
+    >
+      <h1 style={{ fontSize: "34px", marginBottom: "15px" }}>
+        Welcome to FarmLite 🌱
       </h1>
 
-      <p className="mt-4 text-green-100 text-lg">
-        Africa's Digital Agriculture Platform connecting Farmers,
-        Buyers, Companies, Investors and Experts.
+      <p
+        style={{
+          fontSize: "18px",
+          lineHeight: "1.6",
+          maxWidth: "700px",
+        }}
+      >
+        The all-in-one agriculture platform connecting Farmers, Buyers,
+        Agribusinesses, Investors and Experts across Africa and beyond.
       </p>
 
-      <div className="mt-8 flex gap-4 flex-wrap">
-        <button className="bg-white text-green-700 px-6 py-3 rounded-xl font-semibold">
-          Explore Marketplace
-        </button>
-
-        <button className="border border-white px-6 py-3 rounded-xl font-semibold">
-          Join Community
-        </button>
-      </div>
+      <button
+        style={{
+          marginTop: "25px",
+          background: "#ffffff",
+          color: "#0F7A3D",
+          border: "none",
+          padding: "14px 22px",
+          borderRadius: "12px",
+          fontWeight: "bold",
+          cursor: "pointer",
+        }}
+      >
+        Get Started
+      </button>
     </section>
   );
-};
+}
 
 export default HeroSection;
